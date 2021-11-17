@@ -10,7 +10,7 @@ class JsonWriter(object):
         self.path = join(self.output_path, "report.json")
 
     def write(self, keys: list):
-        with open(self.path, 'w') as file:
+        with open(self.path, 'w', encoding="utf-8") as file:
             for d in self.data:
                 result = self.__prepare_dict(keys, d)
                 json.dump(result, file, indent=4)

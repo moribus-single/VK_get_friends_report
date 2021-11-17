@@ -23,18 +23,18 @@ def prepare_list(user: dict, keys: list) -> list:
     for k in keys:
         if k in user:
             if k in ["first_name", "last_name"]:
-                output.append(user[k].encode("utf-8"))
+                output.append(user[k])
 
             elif k in ["country", "city"]:
-                output.append(user[k]["title"].encode("utf-8"))
+                output.append(user[k]["title"])
 
             elif k == "sex":
                 val = "Женский" if user[k] == 1 else "Мужской"
-                output.append(val.encode("utf-8"))
+                output.append(val)
 
             elif k == "bdate":
                 date = prepare_date(user[k])
-                output.append(date.encode("utf-8"))
+                output.append(date)
         else:
             output.append("")
 

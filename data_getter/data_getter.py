@@ -19,4 +19,4 @@ class DataGetter:
 
     @staticmethod
     def __get_fields(keys: list):
-        return ",".join([str(acc) for acc in keys])  # поля для запроса через запятую
+        return ",".join(keys)  # поля для запроса через запятую

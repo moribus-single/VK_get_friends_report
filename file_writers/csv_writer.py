@@ -10,7 +10,7 @@ class CsvWriter(object):
         self.path = join(self.output_path, "report.csv")
 
     def write(self, titles: list, keys: list):
-        with open(self.path, 'w', newline='') as file:
+        with open(self.path, 'w', newline='', encoding="utf-8") as file:
             writer = csv.writer(file, delimiter=',')
             writer.writerow(titles)
 
