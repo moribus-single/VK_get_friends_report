@@ -10,7 +10,7 @@ class TsvWriter(object):
         self.path = join(self.output_path, "report.tsv")
 
     def write(self, titles: list, keys: list):
-        with open(self.path, 'w', newline='') as file:
+        with open(self.path, 'w', newline='', encoding="utf-8") as file:
             writer = csv.writer(file, delimiter='\t')
             writer.writerow(titles)
 
