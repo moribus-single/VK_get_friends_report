@@ -14,9 +14,9 @@ KEYS = ["first_name", "last_name", "country", "city", "bdate", "sex"]
 TITLES = ["Имя", "Фамилия", "Страна", "Город", "Дата", "Пол"]
 
 # Входные данные
-TOKEN = "85a0e15d85a0e15d85a0e15de385dafab0885a085a0e15de43352f73506ed86f870cbc3"
-USER_ID = "267357853"
-OUTPUT_TYPE = "csv"
+TOKEN = ""
+USER_ID = ""
+OUTPUT_TYPE = ""
 OUTPUT_PATH = ""
 
 
