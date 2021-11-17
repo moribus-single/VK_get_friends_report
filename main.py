@@ -16,7 +16,7 @@ TITLES = ["Имя", "Фамилия", "Страна", "Город", "Дата", 
 # Входные данные
 TOKEN = ""
 USER_ID = ""
-OUTPUT_TYPE = ""
+OUTPUT_TYPE = "csv"
 OUTPUT_PATH = ""
 
 
