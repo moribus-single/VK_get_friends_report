@@ -6,3 +6,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/codeStyles/codeStyleConfig.xml
+/misc.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/vcs.xml
+/VK_get_friends_report.iml
