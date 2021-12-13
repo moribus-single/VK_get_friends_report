@@ -1,23 +1,18 @@
 from os.path import exists, join
-from friends_getter.friends_getter import FriendsGetter
-from data_getter.data_getter import DataGetter
+
+from friends_getter import FriendsGetter
+from data_getter import DataGetter
+
 from utils import print_error
 import file_writers
 
-# Поддерживаемые типы для отчетов
-VALID_OUTPUT_TYPES = ['csv', 'tsv', 'json']
-
-# Ключи для получения данных из ответа на запрос к API VK, должны быть согласованны с заголовками
-KEYS = ["first_name", "last_name", "country", "city", "bdate", "sex"]
-
-# Заголовки для отчетных файлов
-TITLES = ["Имя", "Фамилия", "Страна", "Город", "Дата", "Пол"]
-
-# Входные данные
-TOKEN = ""
-USER_ID = ""
-OUTPUT_TYPE = "csv"
-OUTPUT_PATH = ""
+from constants import (TOKEN,
+                       USER_ID,
+                       KEYS,
+                       TITLES,
+                       VALID_OUTPUT_TYPES,
+                       OUTPUT_PATH,
+                       OUTPUT_TYPE)
 
 
 def validation():

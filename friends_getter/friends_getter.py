@@ -9,11 +9,11 @@ class FriendsGetter:
         self.session = vk_api.VkApi(token=access_token)
         self.user_id = str(user_id) if isinstance(user_id, int) else user_id
 
-    def get_friends_list(self) -> list:
+    def get_friends_list(self) -> list | None:
         try:
             response = self.session.method("friends.get", {"user_id": self.user_id})
         except vk_api.exceptions.ApiError:
             print_error("ERROR: Invalid authorization token or user id")
-            return None
+            return
         else:
             return response['items']
