@@ -1,6 +1,6 @@
 # VK get friends report</br>Back-end test task for Junior Developer
 
-## Introduction.
+## Introduction :loudspeaker:
 Система позволяет получить информацию о друзьях пользователя по его id в социальной сети "Вконтакте" и сформировать отчет в 3 поддерживаемых форматах - csv, tsv, json.
 
 Входные данные:</br>
